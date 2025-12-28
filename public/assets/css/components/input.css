@@ -1,0 +1,27 @@
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+ .container-input > label{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+ .container-input > input{
+    padding: 1.5rem 1rem;
+    border: .1rem solid  #64646450;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}
+ .container-input > input::placeholder{
+   
+    font-size: 1.4rem;
+    
+}
+
+ .container-input >input:focus{
+     border-color: #4b4b4bb6;
+}

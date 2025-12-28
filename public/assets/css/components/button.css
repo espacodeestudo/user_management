@@ -1,0 +1,35 @@
+.btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border: 0.1rem solid #000;
+  border-radius: 0.4rem;
+
+  color: #000;
+}
+
+.btn-siginup {
+  background: #000000;
+  color: #fff;
+  transition: filter 0.2s ease-in-out;
+}
+.btn-siginup:hover {
+  filter: brightness(50%);
+}
+.btn-icon {
+  margin-left: 1rem;
+}
+
+.btn_delete {
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+  border: 0.1rem solid #f83d3d;
+  font-size: 1.2rem;
+  border-radius: 100%;
+  transition: filter 0.2s ease-in-out;
+}
+
+.btn_delete:hover {
+  filter: brightness(80%);
+}

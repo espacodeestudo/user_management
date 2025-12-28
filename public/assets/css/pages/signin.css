@@ -1,0 +1,67 @@
+.signin-wrapper{
+    height: 100%;
+    width:100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin-container{
+    width: 35%;
+    padding: 3rem 2rem;
+    background: #ececec2c;
+    border-radius: .6rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.signin-containerForm-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom:1.5rem ;
+}
+
+.signin-containerForm-text > h2{
+    font-size: 2rem;
+}
+.signin-containerForm-text > span{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.signin-containerForm-text  span > a{
+    color: #000;
+    font-weight: 800;
+}
+
+.forgotPassword{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.forgotPassword > a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    transition: all .2s ease-in;
+}
+
+.forgotPassword > a:hover {
+   text-decoration: underline;
+    color: #1f1f1f;
+
+}

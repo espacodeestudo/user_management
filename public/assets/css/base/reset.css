@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+   outline: none;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+}
+
+
+:root{
+    font-size: 62.5%;
+}
+html{
+    height: 100vh;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+a,button{
+    cursor: pointer;
+}
+button{
+    border: none;
+    background: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+

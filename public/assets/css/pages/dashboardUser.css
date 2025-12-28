@@ -1,0 +1,102 @@
+.userD_wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.userD_container {
+  height: 100%;
+  max-height: 20rem;
+  width: 100%;
+background: linear-gradient(180deg, #1b1b1b, #141414);
+
+  padding: 0 10rem;
+  position: relative;
+  display: flex;
+  align-items: end;
+  gap: 4rem;
+}
+
+.userD_photo {
+  align-self: flex-end;
+
+  max-width: 13rem;
+  max-height: 13rem;
+  width: 100%;
+  height: 100%;
+  border: 0.4rem solid #0088f8;
+  border-radius: 100%;
+
+  overflow: hidden;
+  margin-bottom: -4rem;
+}
+
+.userD_photo > img {
+  width: 100%;
+  height: 100%;
+}
+
+.userD_inf {
+  padding: 2rem;
+}
+.userD_inf > h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+.userD_inf > p {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #e4e4e4;
+}
+
+.userD_container_btn {
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+}
+
+.userD_details {
+  padding: 0 4rem;
+}
+
+.userD_card {
+  width: 100%;
+  background: linear-gradient(180deg, #1b1b1b, #141414);
+  border-bottom-left-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
+  padding: 2rem 4rem;
+}
+
+.userD_title {
+  font-size: 1.6rem;
+  color: #cfcfcf;
+  margin-bottom: 1.6rem;
+  margin-top: 4rem;
+}
+
+.userD_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 0;
+  border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.15);
+}
+
+.userD_row.last {
+  border-bottom: none;
+}
+
+.userD_label {
+  color: #9a9a9a;
+  font-size: 1.4rem;
+}
+
+.userD_value {
+  font-size: 1.4rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+}
