@@ -19,46 +19,53 @@
      </div>
      <div class="signup-containair">
         <div class="signup-content">
-            <form action="">
+            <form action="/signup" method="POST">
                 <div class="signup-formText">
                     <h2> Cria conta</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, vero? Voluptatem</p>
                     <span>Já possui uma conta? <a href="/signin">Fazer login</a></span>
                 </div>
+                <?php if(!empty($errors)): ?>
+                <div class="errors">
+                    <?php foreach($errors as $error): ?>
+                        <p class="error-message"><?= htmlspecialchars($error) ?></p>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
                 <div class="signup-container-form">
                     <div class="container-input">
                         <label for="signupFirstName">
                            Primeiro nome
                         </label>
-                        <input type="email" placeholder="Digite seu primeiro nome" id="signupFirstName">
+                        <input type="text" placeholder="Digite seu primeiro nome" id="signupFirstName"  name="first_name" value="<?= htmlspecialchars($old['first_name'] ?? '') ?>">
                     </div>
                       <div class="container-input">
                         <label for="signuLastName">
                            Último Nome
                         </label>
-                        <input type="text" placeholder="Digite seu último nome" id="signuLastName">
+                        <input type="text" placeholder="Digite seu último nome" id="signuLastName" name="last_name"value="<?= htmlspecialchars($old['last_name'] ?? '') ?>">
                     </div>
                     <div class="container-input">
                         <label for="signupLastEmail">
                           Email
                         </label>
-                        <input type="email" placeholder="Digite seu email" id="signupLastEmail">
+                        <input type="email" placeholder="Digite seu email" id="signupLastEmail" name="email" value="<?= htmlspecialchars($old['email'] ?? '') ?>">
                     </div>
                     <div class="container-input">
                         <label for="signupPhone">
                          Telefone
                         </label>
-                        <input type="tel" placeholder="Digite seu número telefonico" id="signupPhone">
+                        <input type="tel" placeholder="Digite seu número telefonico" id="signupPhone" name="phone" value="<?= htmlspecialchars($old['phone'] ?? '') ?>">
                     </div>
                 </div>
                 <div class="container-input">
                     <label for="signupPassword">
                         Senha
                     </label>
-                    <input type="password" placeholder="Digite sua senha" id="signupPassword">
+                    <input type="password" placeholder="Digite sua senha" id="signupPassword" name="password">
                 </div>
               
-                <button class="btn btn-siginup">
+                <button class="btn btn-siginup" type="submit">
                     <span>Cria conta</span>
                 </button>
             </form>

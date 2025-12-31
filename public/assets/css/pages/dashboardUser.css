@@ -7,7 +7,7 @@
   height: 100%;
   max-height: 20rem;
   width: 100%;
-background: linear-gradient(180deg, #1b1b1b, #141414);
+  background: linear-gradient(180deg, #1b1b1b, #141414);
 
   padding: 0 10rem;
   position: relative;
@@ -52,6 +52,10 @@ background: linear-gradient(180deg, #1b1b1b, #141414);
 }
 
 .userD_container_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   position: absolute;
   right: 4rem;
   top: 4rem;
@@ -59,6 +63,12 @@ background: linear-gradient(180deg, #1b1b1b, #141414);
 
 .userD_details {
   padding: 0 4rem;
+}
+
+.userD_details_inf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .userD_card {
@@ -99,4 +109,97 @@ background: linear-gradient(180deg, #1b1b1b, #141414);
   display: flex;
   align-items: center;
   gap: 8rem;
+  text-transform: capitalize;
+}
+
+.userD_modal {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1414148c;
+
+  width: 100%;
+  height: 100%;
+}
+
+.userD_modal.modal_closed{
+  visibility: hidden;
+  opacity: 0;
+  animation: animation_ModalClosed .3s ease-out ;
+}
+
+.userD_modal.modal_open{
+  visibility: visible;
+  opacity: 1;
+
+  animation: animation_ModalOpen .3s ease-in ;
+}
+
+.userD_modal_container {
+  background: #ffffff;
+  width: 35%;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  max-height: 60rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.userD_modal_container::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+.userD_modal_container::-webkit-scrollbar-thumb {
+  background: #636363b9;
+  border-radius: .4rem;
+}
+.userD_modal_container::-webkit-scrollbar-thumb:hover {
+  background: #636363b9;
+}
+.userD_modal_container::-webkit-scrollbar-thumb:active {
+  background: #636363b9;
+}
+
+.userD_modal_container::-webkit-scrollbar-track {
+  background: #18181834;
+}
+.userD_modal_container:hover {
+  overflow-y: scroll;
+}
+
+.userD_modal_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.userD_modal_closed {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@keyframes animation_ModalOpen{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+     100%{
+      opacity: 1;
+    }
+}
+@keyframes animation_ModalClosed{
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+    }
+     100%{
+      opacity: 0;
+    }
 }

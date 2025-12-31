@@ -33,3 +33,27 @@
 .btn_delete:hover {
   filter: brightness(80%);
 }
+
+.btn_logout {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: filter 0.2s ease-in-out;
+}
+
+.btn_logout:hover {
+  filter: brightness(80%);
+}
+
+.btn_closed {
+  height: 3rem;
+  width: 3rem;
+  color: #000000;
+  border: 0.1rem solid #000000;
+  font-size: 1.2rem;
+  border-radius: 100%;
+  transition: filter 0.2s ease-in-out;
+}
+
+.btn_closed:hover {
+  filter: brightness(80%);
+}

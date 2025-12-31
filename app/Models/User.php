@@ -8,37 +8,20 @@ class User extends Model
     protected $table = 'users';
 
     protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'role'
-    ];
+    'first_name',
+    'last_name',
+    'email',
+    'phone',
+    'address',
+    'gender',
+    'birth_date',
+    'nationality',
+    'password',
+    'role'
+];
 
-    protected $hidden = [
-        'password'
-    ];
+
+    protected $hidden = ['password'];
 
     public $timestamps = true;
-
-    
-    public function following()
-    {
-        return $this->belongsToMany(
-            self::class,
-            'follows',
-            'follower_id',
-            'following_id'
-        );
-    }
-
-   
-    public function followers()
-    {
-        return $this->belongsToMany(
-            self::class,
-            'follows',
-            'following_id',
-            'follower_id'
-        );
-    }
 }

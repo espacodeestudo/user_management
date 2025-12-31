@@ -3,11 +3,11 @@ namespace App\UseCases;
 
 use App\Services\UserService;
 
-class  CreateUserUseCase
+class LoginUseCase
 {
     public function execute(array $data)
     {
-        return (new UserService())->create($data);
+        return (new UserService())->login($data);
     }
 }
 

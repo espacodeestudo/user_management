@@ -25,3 +25,11 @@
  .container-input >input:focus{
      border-color: #4b4b4bb6;
 }
+
+ .container-input > select{
+    padding: 1.5rem 1rem;
+    border: .1rem solid  #64646450;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}

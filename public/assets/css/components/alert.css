@@ -1,0 +1,11 @@
+.alert-success{
+  background-color: #acff4e;
+    border: .1rem solid #9dff4d;
+    padding: 1rem;
+}
+
+.alert-message{
+    color: #5bff1a;
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}

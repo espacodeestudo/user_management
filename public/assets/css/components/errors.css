@@ -1,0 +1,13 @@
+.errors {
+    background-color: #ffe6e6;
+    border: .1rem solid #ff4d4d;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+.error-message {
+    color: #ff1a1a;
+    font-size: 1.4rem;
+    margin: .5rem 0;
+}
